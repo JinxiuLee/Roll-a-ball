@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag ( "Pick Up"))
+		if (other.gameObject.CompareTag ("Pick Up"))
 		{
 			other.gameObject.SetActive (false);
 			count = count + 1;
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText ()
 	{
 		countText.text = "Count: " + count.ToString ();
-		if (count >= 9)
+		if (count >= 8)
 		{
 			winText.text = "You Win!";
 		}
